@@ -27,3 +27,4 @@
 # 2. Be self contained i.e. not needing external media server so it has one less dependency. 
 # 
 # I will add more description later. Feel free to comment.
+# Apology: I realize this is YAAP (Yet Another Azan Player) but I felt I needed to put this together.
