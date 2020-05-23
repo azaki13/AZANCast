@@ -1,6 +1,6 @@
 # AZANCast
 # Play Azan (aka Adhan) MPEG files at correct times daily to one or more Chromecast Speaker devices (e.g. Google Home mini).
-# Currently on Raspberry Pi (therefore the user pi) but can be run on any Python 3 capable box
+# Currently on Raspberry Pi (hence the user pi) but can be run on any Python 3 capable box
 # 
 # This program updates the crontab for user pi to to include 2 programs to be run at reboot and
 # multiple Azan/other media as needed. You will need to edit this file to add lines to setup the string
