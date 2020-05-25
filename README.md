@@ -20,6 +20,27 @@
 # That is it!
 # It is important that a reboot is needed to start the webserver serving the media files.
 # 
+## This program updates the crontab for user pi to to include 2 programs to be run at reboot and
+# multiple Azan/other media as needed. You will need to edit this file to add lines to setup the string
+# strPlayFajrAzaanMP3Command and add the call to function addAzaanTime().
+# 
+# It is important that a reboot is needed to start the webserver serving the media files.
+# 
+# To install/initialize:
+#      1. From the ~pi/AZAN folder run: python3 /home/pi/AZAN/updateAzaanTimers.py
+#      2. Reboot either from the Raspberry Menu at top left corner of screen or Run from command line: 
+#         pi@raspberrypi:~ $ sudo reboot <CR>
+# That's it
+# You can view the crontab by running the following command at command line:  crontab -l
+#
+# Personalization:
+# There are 5 items to be personalized early in this file:
+# 1. Latitude  & Longitude (use sites like latlong.net to find your town's or home's latitude/longitude
+# 2. Chromecast Speakers, e.g. "Family Room speaker","Bed Room speaker"
+# 3. Azan volume
+# 4. Azan times calculation method e.g. "ISNA" OR "MWL" OR "EGYPT" OR "MAKKAH" OR "KARACHI" OR "TEHRAN" OR "JAFARI"
+# 5. Timezone e.g. "America/New_York", etc
+#
 # You can view the crontab by running the following command at command line:  crontab -l
 # Some Credits and history: As a starting point I got the main code from a friend who had downloaded "possibly" from https://github.com/achaudhry/adhan. The code was downloaded 3+ years ago, in Python 2 and had been updated by my friend over the years to work to wired speakers. 
 # My additional needs were: 
@@ -28,3 +49,7 @@
 # 
 # I will add more description later. Feel free to comment.
 # Apology: I realize this is YAAP (Yet Another Azan Player) but I felt I needed to put this together. There is another player https://github.com/OJ7/AdhanCast which also seems like a good and clean implementation.
+# Some ToDo items: 1. Put configuration/personalization via interactive Azanconfig.py to write to Azan.conf file.
+#                     This will make selection of devices names simpler.
+#                  2. Change user to azan instead of default pi. Set AZANHOME path variable accordingly
+#                  3. List all Python modules to be installed in requirements.txt
