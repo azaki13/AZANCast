@@ -1,4 +1,4 @@
-# AZANCast
+#AZANCast
 # Play Azan (aka Adhan) MPEG files at correct times daily to one or more Chromecast Speaker devices (e.g. Google Home mini).
 # Currently on Raspberry Pi (hence the user pi) but can be run on any Python 3 capable box
 # 
