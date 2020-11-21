@@ -13,9 +13,9 @@ strPlayFajrAzaanMP3Command and add the call to function addAzaanTime().
  3. You will need to add Python modules that are used for "import" command in the .py files. Use command: pip3 install <module name>
  
 # To install/initialize:
-     1. Download as zip file. and unzip in /home/pi as user pi.
-     2. From the /home/pi/AZAN folder run: python3 /home/pi/AZAN/updateAzaanTimers.py
-     3. Reboot either from the Raspberry Menu at top left corner of screen or Run from command line: 
+ 1. Download as zip file. and unzip in /home/pi as user pi.
+ 2. From the /home/pi/AZAN folder run: python3 /home/pi/AZAN/updateAzaanTimers.py
+ 3. Reboot either from the Raspberry Menu at top left corner of screen or Run from command line: 
         pi@raspberrypi:~ $ sudo reboot <CR>
 That is it!
 It is important that a reboot is needed to start the webserver serving the media files.
